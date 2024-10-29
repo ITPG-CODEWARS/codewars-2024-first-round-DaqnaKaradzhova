@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Влакове</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #70B9B9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #70B9B9;
+            color: white;
+            padding: 20px;
+        }
+        .train {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #70B9B9;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            text-decoration: none;
+            color: #007B7F;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Всички Влакове</h1>
+    </header>
+
+    <section>
+        <div class="train">
+            <h3>Скоростен Влак</h3>
+            <p>Бърз и комфортен, идеален за бизнес и ваканционни пътувания.</p>
+            <a href="train1.html">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
+        </div>
+
+        <div class="train">
+            <h3>Влак 2</h3>
+            <p>Удобен влак с множество услуги на борда.</p>
+            <a href="train2.html">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
+        </div>
+
+        <div class="train">
+            <h3>Влак 3</h3>
+            <p>Семейна атмосфера и приятни пътувания.</p>
+            <a href="train3.html">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
+        </div>
+
+        <!-- Можеш да добавиш още влакове тук -->
+    </section>
+
+    <a href="index.html" style="display: inline-block; margin-top: 20px;">Назад към Началната страница</a>
+</body>
+</html>

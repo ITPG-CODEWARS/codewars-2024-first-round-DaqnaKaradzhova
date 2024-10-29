@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моят Уебсайт за Влакове</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('images/гара.jpg');
+            background-size: cover; 
+            background-position: center; 
+            color: #70B9B9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(112, 185, 185, 0.8); 
+            color: white;
+            animation: fadeIn 1s ease-in;
+        }
+        nav {
+            background-color: rgba(0, 123, 127, 0.8); 
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .trains-section {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .train {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #70B9B9;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            animation: slideIn 0.5s ease-in;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #70B9B9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добре дошли в Моят Уебсайт за Влакове!</h1>
+    <p>Вашият гид в света на влаковете.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="additional-info.html"><i class="fas fa-info-circle"></i> Допълнителна информация</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакти</a></li>
+    </ul>
+</nav>
+
+<div class="main-section">
+    <h2>Нашето Мото</h2>
+    <p>Пътувайте с комфорт и стил!</p>
+</div>
+
+<div class="trains-section">
+    <h2>Най-новите влакове</h2>
+    <div class="train">
+        <h3>Скоростен влак</h3>
+        <p>Кратко описание на Скоростния влак.</p>
+        <a href="train1.html" class="button">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
+    </div>
+    <div class="train">
+        <h3>Бавен влак</h3>
+        <p>Кратко описание на Бавен влак.</p>
+        <a href="train2.html" class="button">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
+    </div>
+    <div class="train">
+        <h3>Товарен влак</h3>
+        <p>Кратко описание на Товарен влак.</p>
+        <a href="train3.html" class="button">ПОВЕЧЕ ИНФОРМАЦИЯ</a>
+    </div>
+</div>
+
+</body>
+</html>

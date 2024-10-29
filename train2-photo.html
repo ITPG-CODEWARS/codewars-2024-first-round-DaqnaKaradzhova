@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, content="initial-scale=1.0">
+    <title>Снимки на Бавен Влак</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #70B9B9;
+            color: white;
+            padding: 20px;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .slider {
+            max-width: 600px;
+            margin: 20px auto;
+            position: relative;
+        }
+        .slider img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #007B7F;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #007B7F;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Снимки на Бавен Влак</h1>
+    </header>
+
+    <div class="slider">
+        <img id="slide" src="бавен влак/train-1.jpg" alt="Бавен Влак 1">
+    </div>
+    <button onclick="prevSlide()">Предишно</button>
+    <button onclick="nextSlide()">Следващо</button>
+
+    <a href="index.html">ВРЪЩАНЕ НА НАЧАЛНАТА СТРАНИЦА</a>
+
+    <script>
+        const images = [
+            'бавен влак/train-1.jpg',
+            'бавен влак/train-3.jpg',
+            'images/train-1.jpg'
+        ];
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            document.getElementById('slide').src = images[index];
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showSlide(currentIndex);
+        }
+    </script>
+
+</body>
+</html>
